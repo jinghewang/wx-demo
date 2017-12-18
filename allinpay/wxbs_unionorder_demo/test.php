@@ -1,6 +1,6 @@
 <?php
 	header("Content-type:text/html;charset=utf-8");
-	require_once 'AppConfig.php';
+	require_once '../AppConfig.php';
 	require_once 'AppUtil.php';
 
 	//2017-05-17后推荐使用function scanpay

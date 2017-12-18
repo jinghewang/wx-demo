@@ -1,6 +1,6 @@
 header("Content-type: text/html; charset=gb2312"); 
 <?php
-	require_once 'AppConfig.php';
+	require_once '../AppConfig.php';
 	require_once 'AppUtil.php';
 
 	$params = array();

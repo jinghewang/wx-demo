@@ -1,6 +1,6 @@
 <?php
 	header("Content-type:text/html;charset=utf-8");
-	require_once 'AppConfig.php';
+	require_once '../AppConfig.php';
 	require_once 'AppUtil.php';
 
 	
@@ -9,8 +9,8 @@
 		$params["cusid"] = AppConfig::CUSID;
 	    $params["appid"] = AppConfig::APPID;
 	    $params["version"] = AppConfig::APIVERSION;
-	    $params["trxamt"] = "1";
-	    $params["reqsn"] = "123456";//订单号,自行生成
+	    $params["trxamt"] = "1";//交易金额
+	    $params["reqsn"] = "hbd". rand(0,9999);//订单号,自行生成
 	    $params["paytype"] = "W01";
 	    $params["randomstr"] = "1450432107647";//
 	    $params["body"] = "商品名称";
